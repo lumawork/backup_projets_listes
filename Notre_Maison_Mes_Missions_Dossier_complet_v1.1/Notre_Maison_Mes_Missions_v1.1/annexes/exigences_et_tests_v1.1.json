@@ -1,0 +1,1413 @@
+{
+  "requirements": [
+    {
+      "id": "EX01",
+      "exigence": "Deux listes tablette visibles",
+      "source": "S01 S02 S07",
+      "priorite": "MVP",
+      "specification": "§5,6",
+      "tests": "T01",
+      "statut": "À réaliser"
+    },
+    {
+      "id": "EX02",
+      "exigence": "Scroll vertical indépendant",
+      "source": "S01 S02",
+      "priorite": "MVP",
+      "specification": "§5",
+      "tests": "T02",
+      "statut": "À réaliser"
+    },
+    {
+      "id": "EX03",
+      "exigence": "Troisième liste Maman et scroll horizontal",
+      "source": "S01 S02",
+      "priorite": "MVP",
+      "specification": "§5",
+      "tests": "T01",
+      "statut": "À réaliser"
+    },
+    {
+      "id": "EX04",
+      "exigence": "Règles et raccourcis fixes",
+      "source": "S01 S02 S03–S07",
+      "priorite": "MVP",
+      "specification": "§5,11",
+      "tests": "T03",
+      "statut": "À réaliser"
+    },
+    {
+      "id": "EX05",
+      "exigence": "Écran tâches permanent",
+      "source": "S01 S02",
+      "priorite": "MVP",
+      "specification": "§5,13",
+      "tests": "T04",
+      "statut": "À réaliser"
+    },
+    {
+      "id": "EX06",
+      "exigence": "Icônes et aide de paramétrage",
+      "source": "S01 S02",
+      "priorite": "MVP",
+      "specification": "§5,12",
+      "tests": "T03",
+      "statut": "À réaliser"
+    },
+    {
+      "id": "EX07",
+      "exigence": "Trois associations de listes configurables",
+      "source": "S01 S02",
+      "priorite": "MVP",
+      "specification": "§12,17",
+      "tests": "T42 T48",
+      "statut": "À réaliser"
+    },
+    {
+      "id": "EX08",
+      "exigence": "Portail distinct et moteur partagé",
+      "source": "S01 S02 S08",
+      "priorite": "MVP",
+      "specification": "§3,14",
+      "tests": "T07 T55",
+      "statut": "À réaliser"
+    },
+    {
+      "id": "EX09",
+      "exigence": "Retour après inactivité",
+      "source": "S01 S02",
+      "priorite": "MVP",
+      "specification": "§13",
+      "tests": "T04",
+      "statut": "À réaliser"
+    },
+    {
+      "id": "EX10",
+      "exigence": "Maintien caméra verrouillable/déverrouillable",
+      "source": "S01 S02",
+      "priorite": "MVP",
+      "specification": "§13",
+      "tests": "T05 T06",
+      "statut": "À réaliser"
+    },
+    {
+      "id": "EX11",
+      "exigence": "Caméra sans faux direct",
+      "source": "Conception S12",
+      "priorite": "MVP",
+      "specification": "§13",
+      "tests": "T06",
+      "statut": "À réaliser"
+    },
+    {
+      "id": "EX12",
+      "exigence": "Accès téléphone responsive",
+      "source": "S01 S02",
+      "priorite": "MVP",
+      "specification": "§5",
+      "tests": "T07",
+      "statut": "À réaliser"
+    },
+    {
+      "id": "EX13",
+      "exigence": "Validation multiappareils",
+      "source": "S01 S02",
+      "priorite": "MVP",
+      "specification": "§16",
+      "tests": "T07",
+      "statut": "À réaliser"
+    },
+    {
+      "id": "EX14",
+      "exigence": "Retards en tête",
+      "source": "S01 S02",
+      "priorite": "MVP",
+      "specification": "§5,7",
+      "tests": "T08",
+      "statut": "À réaliser"
+    },
+    {
+      "id": "EX15",
+      "exigence": "Non-cochées conservées",
+      "source": "S01 S02",
+      "priorite": "MVP",
+      "specification": "§8",
+      "tests": "T08",
+      "statut": "À réaliser"
+    },
+    {
+      "id": "EX16",
+      "exigence": "Apparition J−5 pour >24h",
+      "source": "S01 S02",
+      "priorite": "MVP",
+      "specification": "§7",
+      "tests": "T09",
+      "statut": "À réaliser"
+    },
+    {
+      "id": "EX17",
+      "exigence": "Apparition H−2 pour ≤24h",
+      "source": "S01 S02",
+      "priorite": "MVP",
+      "specification": "§7",
+      "tests": "T10",
+      "statut": "À réaliser"
+    },
+    {
+      "id": "EX18",
+      "exigence": "Apparition période−4h",
+      "source": "S01 S02",
+      "priorite": "MVP",
+      "specification": "§7",
+      "tests": "T11",
+      "statut": "À réaliser"
+    },
+    {
+      "id": "EX19",
+      "exigence": "Traitement explicite exactement 24 h",
+      "source": "S01 H01",
+      "priorite": "MVP",
+      "specification": "§7,23",
+      "tests": "T12",
+      "statut": "À réaliser"
+    },
+    {
+      "id": "EX20",
+      "exigence": "Ponctualité <24h dans heure",
+      "source": "S01 H03",
+      "priorite": "MVP",
+      "specification": "§7",
+      "tests": "T13 T14",
+      "statut": "À réaliser"
+    },
+    {
+      "id": "EX21",
+      "exigence": "Ponctualité dans période",
+      "source": "S01 S02",
+      "priorite": "MVP",
+      "specification": "§7",
+      "tests": "T15",
+      "statut": "À réaliser"
+    },
+    {
+      "id": "EX22",
+      "exigence": "Ponctualité >24h dans journée",
+      "source": "S01 S02",
+      "priorite": "MVP",
+      "specification": "§7",
+      "tests": "T16",
+      "statut": "À réaliser"
+    },
+    {
+      "id": "EX23",
+      "exigence": "Anticipation explicite",
+      "source": "H03",
+      "priorite": "MVP",
+      "specification": "§7,10",
+      "tests": "T17",
+      "statut": "À réaliser"
+    },
+    {
+      "id": "EX24",
+      "exigence": "Récurrence après dernière validation/poules7j",
+      "source": "S01 S02 H07",
+      "priorite": "MVP",
+      "specification": "§8",
+      "tests": "T18 T19 T27",
+      "statut": "À réaliser"
+    },
+    {
+      "id": "EX25",
+      "exigence": "Relative sans accumulation artificielle",
+      "source": "S02 H07",
+      "priorite": "MVP",
+      "specification": "§8",
+      "tests": "T19",
+      "statut": "À réaliser"
+    },
+    {
+      "id": "EX26",
+      "exigence": "Fixes avec occurrences persistantes",
+      "source": "S01 S02",
+      "priorite": "MVP",
+      "specification": "§8",
+      "tests": "T20",
+      "statut": "À réaliser"
+    },
+    {
+      "id": "EX27",
+      "exigence": "Échéance initiale fiable",
+      "source": "S01 Conception",
+      "priorite": "MVP",
+      "specification": "§8,20",
+      "tests": "T21",
+      "statut": "À réaliser"
+    },
+    {
+      "id": "EX28",
+      "exigence": "Réalisation atomique",
+      "source": "S01 S08",
+      "priorite": "MVP",
+      "specification": "§16",
+      "tests": "T22",
+      "statut": "À réaliser"
+    },
+    {
+      "id": "EX29",
+      "exigence": "Idempotence et absence de doublons",
+      "source": "S01 S08",
+      "priorite": "MVP",
+      "specification": "§16",
+      "tests": "T23 T24",
+      "statut": "À réaliser"
+    },
+    {
+      "id": "EX30",
+      "exigence": "Reports tracés et baseline conservée",
+      "source": "S01 H11",
+      "priorite": "MVP",
+      "specification": "§8,10",
+      "tests": "T24 T25",
+      "statut": "À réaliser"
+    },
+    {
+      "id": "EX31",
+      "exigence": "Saut distinct sans réalisation",
+      "source": "S01 S02 H08",
+      "priorite": "MVP",
+      "specification": "§8,10",
+      "tests": "T26 T27",
+      "statut": "À réaliser"
+    },
+    {
+      "id": "EX32",
+      "exigence": "Pause/annulation explicites",
+      "source": "S01 Conception",
+      "priorite": "MVP",
+      "specification": "§8",
+      "tests": "T28",
+      "statut": "À réaliser"
+    },
+    {
+      "id": "EX33",
+      "exigence": "Corrections sans effacement",
+      "source": "S01 Conception",
+      "priorite": "MVP",
+      "specification": "§8",
+      "tests": "T29",
+      "statut": "À réaliser"
+    },
+    {
+      "id": "EX34",
+      "exigence": "Son/horaire paramétrables",
+      "source": "S01 S02",
+      "priorite": "MVP",
+      "specification": "§9",
+      "tests": "T30",
+      "statut": "À réaliser"
+    },
+    {
+      "id": "EX35",
+      "exigence": "Rappels arrêtés et dédupliqués",
+      "source": "S01 S08",
+      "priorite": "MVP",
+      "specification": "§9",
+      "tests": "T31 T32",
+      "statut": "À réaliser"
+    },
+    {
+      "id": "EX36",
+      "exigence": "Quiet hours et report du rappel séparé",
+      "source": "S01 H10",
+      "priorite": "MVP",
+      "specification": "§9",
+      "tests": "T33",
+      "statut": "À réaliser"
+    },
+    {
+      "id": "EX37",
+      "exigence": "Rituels et rappels configurables",
+      "source": "S01 S04",
+      "priorite": "MVP",
+      "specification": "§9,12",
+      "tests": "T34",
+      "statut": "À réaliser"
+    },
+    {
+      "id": "EX38",
+      "exigence": "Statistiques globales/personnelles/dénominateurs",
+      "source": "S01 S02",
+      "priorite": "MVP",
+      "specification": "§10",
+      "tests": "T35 T36",
+      "statut": "À réaliser"
+    },
+    {
+      "id": "EX39",
+      "exigence": "Responsable distinct du validateur",
+      "source": "Conception S01",
+      "priorite": "MVP",
+      "specification": "§4,10",
+      "tests": "T37",
+      "statut": "À réaliser"
+    },
+    {
+      "id": "EX40",
+      "exigence": "Conservation historique et snapshots",
+      "source": "S01 H11",
+      "priorite": "MVP",
+      "specification": "§10",
+      "tests": "T38",
+      "statut": "À réaliser"
+    },
+    {
+      "id": "EX41",
+      "exigence": "Bandeau quotidien valorisant",
+      "source": "S01 S02 S08",
+      "priorite": "MVP",
+      "specification": "§10",
+      "tests": "T39 T40",
+      "statut": "À réaliser"
+    },
+    {
+      "id": "EX42",
+      "exigence": "Stats Annabelle/Papa/Maman sans Jonathan",
+      "source": "S01 S02",
+      "priorite": "MVP",
+      "specification": "§10",
+      "tests": "T41",
+      "statut": "À réaliser"
+    },
+    {
+      "id": "EX43",
+      "exigence": "Identifiant et code de liste sécurisé",
+      "source": "S01 S02 H16",
+      "priorite": "MVP",
+      "specification": "§17",
+      "tests": "T42 T43",
+      "statut": "À réaliser"
+    },
+    {
+      "id": "EX44",
+      "exigence": "Révocation effective des accès",
+      "source": "S01",
+      "priorite": "MVP",
+      "specification": "§17",
+      "tests": "T43 T44 T45",
+      "statut": "À réaliser"
+    },
+    {
+      "id": "EX45",
+      "exigence": "Horsligne lecture honnête",
+      "source": "Conception ADR05",
+      "priorite": "MVP",
+      "specification": "§16,17",
+      "tests": "T45 T59",
+      "statut": "À réaliser"
+    },
+    {
+      "id": "EX46",
+      "exigence": "Droits et confidentialité par liste",
+      "source": "S01 S08",
+      "priorite": "MVP",
+      "specification": "§4,17",
+      "tests": "T46 T47",
+      "statut": "À réaliser"
+    },
+    {
+      "id": "EX47",
+      "exigence": "Administration et conflits de configuration",
+      "source": "S01 S02",
+      "priorite": "MVP",
+      "specification": "§12",
+      "tests": "T48",
+      "statut": "À réaliser"
+    },
+    {
+      "id": "EX48",
+      "exigence": "Texte/liens/intents validés",
+      "source": "S01 S12",
+      "priorite": "MVP",
+      "specification": "§17",
+      "tests": "T49",
+      "statut": "À réaliser"
+    },
+    {
+      "id": "EX49",
+      "exigence": "Inventaire et migration à blanc",
+      "source": "S01",
+      "priorite": "MVP",
+      "specification": "§20",
+      "tests": "T50",
+      "statut": "À réaliser"
+    },
+    {
+      "id": "EX50",
+      "exigence": "Migration déterministe anti-doublons",
+      "source": "S01",
+      "priorite": "MVP",
+      "specification": "§20",
+      "tests": "T51",
+      "statut": "À réaliser"
+    },
+    {
+      "id": "EX51",
+      "exigence": "Bascule sans double rappel",
+      "source": "S01 S08",
+      "priorite": "MVP",
+      "specification": "§20",
+      "tests": "T52",
+      "statut": "À réaliser"
+    },
+    {
+      "id": "EX52",
+      "exigence": "Sauvegarde et restauration vérifiables",
+      "source": "S01",
+      "priorite": "MVP",
+      "specification": "§19,20",
+      "tests": "T53",
+      "statut": "À réaliser"
+    },
+    {
+      "id": "EX53",
+      "exigence": "Ne pas inventer ponctualité legacy",
+      "source": "S08 S09 Conception",
+      "priorite": "MVP",
+      "specification": "§1,20",
+      "tests": "T54",
+      "statut": "À réaliser"
+    },
+    {
+      "id": "EX54",
+      "exigence": "Heure d’été/hiver et fuseaux",
+      "source": "S11 H06",
+      "priorite": "MVP",
+      "specification": "§7",
+      "tests": "T55 T56",
+      "statut": "À réaliser"
+    },
+    {
+      "id": "EX55",
+      "exigence": "Temps réel sécurisé et resynchronisation",
+      "source": "S01 S08 ADR03",
+      "priorite": "MVP",
+      "specification": "§14,16",
+      "tests": "T57 T58",
+      "statut": "À réaliser"
+    },
+    {
+      "id": "EX56",
+      "exigence": "Performance/endurance sur matériel",
+      "source": "S01 Conception",
+      "priorite": "MVP",
+      "specification": "§19",
+      "tests": "T60",
+      "statut": "À réaliser"
+    },
+    {
+      "id": "EX57",
+      "exigence": "Accessibilité et lisibilité",
+      "source": "S01 Conception",
+      "priorite": "MVP",
+      "specification": "§5,19",
+      "tests": "T61",
+      "statut": "À réaliser"
+    },
+    {
+      "id": "EX58",
+      "exigence": "Lancer URL/apps et retour fiable",
+      "source": "S01 S02 S12",
+      "priorite": "MVP",
+      "specification": "§13",
+      "tests": "T62",
+      "statut": "À réaliser"
+    },
+    {
+      "id": "EX59",
+      "exigence": "Localisation avec consentement",
+      "source": "S01",
+      "priorite": "E1",
+      "specification": "§17,18",
+      "tests": "T63",
+      "statut": "À réaliser"
+    },
+    {
+      "id": "EX60",
+      "exigence": "Agenda privé et courses secondaires",
+      "source": "S01 S02",
+      "priorite": "E1",
+      "specification": "§18",
+      "tests": "T64",
+      "statut": "À réaliser"
+    },
+    {
+      "id": "EX61",
+      "exigence": "Volets/HA sans dépendance moteur",
+      "source": "S01 S02",
+      "priorite": "E1",
+      "specification": "§18",
+      "tests": "T65",
+      "statut": "À réaliser"
+    },
+    {
+      "id": "EX62",
+      "exigence": "Protection des secrets et minimisation",
+      "source": "S01 S08 S12",
+      "priorite": "MVP",
+      "specification": "§17",
+      "tests": "T66",
+      "statut": "À réaliser"
+    },
+    {
+      "id": "EX63",
+      "exigence": "Mise à jour PWA non destructive",
+      "source": "S01 S08",
+      "priorite": "MVP",
+      "specification": "§14,19",
+      "tests": "T67",
+      "statut": "À réaliser"
+    },
+    {
+      "id": "EX64",
+      "exigence": "Maintenance simple règles/rituels/listes",
+      "source": "S01 S02 S03",
+      "priorite": "MVP",
+      "specification": "§11,12",
+      "tests": "T68",
+      "statut": "À réaliser"
+    },
+    {
+      "id": "EX65",
+      "exigence": "Aucune écriture dans systèmes mémoire",
+      "source": "S01",
+      "priorite": "MVP",
+      "specification": "§2,3,17",
+      "tests": "T69",
+      "statut": "À réaliser"
+    },
+    {
+      "id": "EX66",
+      "exigence": "Cas limites minuit et création tardive",
+      "source": "S01 Conception",
+      "priorite": "MVP",
+      "specification": "§7",
+      "tests": "T70",
+      "statut": "À réaliser"
+    },
+    {
+      "id": "EX67",
+      "exigence": "Avatars modifiables et direction visuelle validée",
+      "source": "S13",
+      "priorite": "MVP",
+      "specification": "§6,27",
+      "tests": "T71 T72 T73",
+      "statut": "À réaliser / vérifier à la recette V1.0"
+    }
+  ],
+  "tests": [
+    {
+      "id": "T01",
+      "priorite": "P0",
+      "exigences": "EX01 EX03",
+      "titre": "Deux listes visibles",
+      "preconditions": "Tablette 1024 × 600 CSS, trois listes configurées.",
+      "action": "Ouvrir puis glisser horizontalement.",
+      "resultat_attendu": "Annabelle/Papa puis Papa/Maman visibles ; règles et pied fixes ; deux colonnes lisibles.",
+      "statut": "À exécuter",
+      "lot": "MVP"
+    },
+    {
+      "id": "T02",
+      "priorite": "P0",
+      "exigences": "EX02",
+      "titre": "Défilements indépendants",
+      "preconditions": "50 tâches pour Annabelle, 30 pour Papa.",
+      "action": "Défiler chaque colonne séparément.",
+      "resultat_attendu": "Les positions des autres zones ne changent pas ; le geste ne coche rien.",
+      "statut": "À exécuter",
+      "lot": "MVP"
+    },
+    {
+      "id": "T03",
+      "priorite": "P1",
+      "exigences": "EX04 EX06",
+      "titre": "Raccourcis compacts et aides",
+      "preconditions": "Raccourcis URL et Android configurés.",
+      "action": "Comparer accueil et administration.",
+      "resultat_attendu": "Icônes seules avec noms accessibles à l’accueil ; textes explicatifs et ordre dans les paramètres.",
+      "statut": "À exécuter",
+      "lot": "MVP"
+    },
+    {
+      "id": "T04",
+      "priorite": "P0",
+      "exigences": "EX05 EX09",
+      "titre": "Tâches au premier plan",
+      "preconditions": "Volet ouvert ; inactivité réglée à 120 s.",
+      "action": "Attendre 119 s, puis 120 s sans geste.",
+      "resultat_attendu": "Retour aux tâches à 120 s ; horloge et réseau ne réarment pas le délai.",
+      "statut": "À exécuter",
+      "lot": "MVP"
+    },
+    {
+      "id": "T05",
+      "priorite": "P0",
+      "exigences": "EX10",
+      "titre": "Verrou caméra",
+      "preconditions": "Flux fictif frais et accès autorisé.",
+      "action": "Ouvrir, verrouiller, attendre, puis déverrouiller.",
+      "resultat_attendu": "Maintien au-delà du délai ; verrou visible ; retour immédiat aux tâches après déverrouillage.",
+      "statut": "À exécuter",
+      "lot": "MVP"
+    },
+    {
+      "id": "T06",
+      "priorite": "P0",
+      "exigences": "EX10 EX11",
+      "titre": "Panne caméra détectable",
+      "preconditions": "Caméra en maintien de surveillance.",
+      "action": "Couper le flux sans fermer le lecteur.",
+      "resultat_attendu": "Alerte après le seuil qualifié ; une image ancienne n’est pas présentée comme du direct ; sortie disponible.",
+      "statut": "À exécuter",
+      "lot": "MVP"
+    },
+    {
+      "id": "T07",
+      "priorite": "P0",
+      "exigences": "EX12 EX13",
+      "titre": "Téléphone et validation",
+      "preconditions": "Deux appareils autorisés et occurrence ouverte.",
+      "action": "Cocher sur téléphone et observer la tablette.",
+      "resultat_attendu": "Une réalisation ; retrait après acquittement ; latence conforme sur la campagne.",
+      "statut": "À exécuter",
+      "lot": "MVP"
+    },
+    {
+      "id": "T08",
+      "priorite": "P0",
+      "exigences": "EX14 EX15",
+      "titre": "Retard conservé",
+      "preconditions": "Occurrence échue hier et non faite.",
+      "action": "Passer minuit, recharger et reconnecter.",
+      "resultat_attendu": "Même occurrence en tête ; aucun reset ni disparition.",
+      "statut": "À exécuter",
+      "lot": "MVP"
+    },
+    {
+      "id": "T09",
+      "priorite": "P0",
+      "exigences": "EX16",
+      "titre": "Apparition longue",
+      "preconditions": "Fréquence 7 jours ; échéance et horloge fixées.",
+      "action": "Lire une seconde avant J−5, à J−5 et une seconde après.",
+      "resultat_attendu": "Invisible avant ; visible à partir de la borne civile définie en H02.",
+      "statut": "À exécuter",
+      "lot": "MVP"
+    },
+    {
+      "id": "T10",
+      "priorite": "P0",
+      "exigences": "EX17",
+      "titre": "Apparition courte",
+      "preconditions": "Fréquence 6 h ; échéance à 14:00.",
+      "action": "Lire à 11:59:59, 12:00:00 et 12:00:01.",
+      "resultat_attendu": "Invisible puis visible à partir de 12:00.",
+      "statut": "À exécuter",
+      "lot": "MVP"
+    },
+    {
+      "id": "T11",
+      "priorite": "P0",
+      "exigences": "EX18",
+      "titre": "Période prioritaire",
+      "preconditions": "Période matin 06–12 avec fréquence 7 jours.",
+      "action": "Lire à 01:59:59 puis 02:00 le jour concerné.",
+      "resultat_attendu": "Apparition à 02:00 ; la règle de période prime sur J−5.",
+      "statut": "À exécuter",
+      "lot": "MVP"
+    },
+    {
+      "id": "T12",
+      "priorite": "P0",
+      "exigences": "EX19",
+      "titre": "Exactement 24 heures",
+      "preconditions": "Fréquence nominale 24 h ; heure cible 08:00.",
+      "action": "Lire avant/après 06:00 puis valider à 20:00.",
+      "resultat_attendu": "Apparition à 06:00 ; réalisation dans les temps à 20:00 selon H01 ; convention affichée.",
+      "statut": "À exécuter",
+      "lot": "MVP"
+    },
+    {
+      "id": "T13",
+      "priorite": "P0",
+      "exigences": "EX20",
+      "titre": "Ponctualité heure",
+      "preconditions": "Fréquence 6 h ; heure cible 10:00.",
+      "action": "Valider deux occurrences de test à 10:59:59 puis 11:00.",
+      "resultat_attendu": "Première dans les temps ; seconde en retard ; borne haute exclusive.",
+      "statut": "À exécuter",
+      "lot": "MVP"
+    },
+    {
+      "id": "T14",
+      "priorite": "P0",
+      "exigences": "EX20",
+      "titre": "Fréquence moins d’une heure",
+      "preconditions": "Calendrier fixe toutes les 30 min ; cible 10:00.",
+      "action": "Valider à 10:29:59 puis à 10:30.",
+      "resultat_attendu": "Tolérance plafonnée à la prochaine échéance ; occurrences distinctes.",
+      "statut": "À exécuter",
+      "lot": "MVP"
+    },
+    {
+      "id": "T15",
+      "priorite": "P0",
+      "exigences": "EX21",
+      "titre": "Frontière de période",
+      "preconditions": "Période matin finissant à 12:00.",
+      "action": "Valider à 11:59:59 puis à 12:00.",
+      "resultat_attendu": "Première réalisation dans les temps ; seconde en retard pour le matin.",
+      "statut": "À exécuter",
+      "lot": "MVP"
+    },
+    {
+      "id": "T16",
+      "priorite": "P0",
+      "exigences": "EX22",
+      "titre": "Journée civile",
+      "preconditions": "Fréquence 48 h ; échéance un mardi.",
+      "action": "Valider mardi à 23:59:59 puis mercredi à 00:00.",
+      "resultat_attendu": "Dans les temps puis en retard ; fuseau du foyer appliqué.",
+      "statut": "À exécuter",
+      "lot": "MVP"
+    },
+    {
+      "id": "T17",
+      "priorite": "P0",
+      "exigences": "EX23",
+      "titre": "Anticipation",
+      "preconditions": "Occurrence visible mais pas encore due.",
+      "action": "Valider puis consulter les statistiques.",
+      "resultat_attendu": "Étiquette en avance ; crédit dans les temps ; cohorte future préservée ; action valorisée aujourd’hui.",
+      "statut": "À exécuter",
+      "lot": "MVP"
+    },
+    {
+      "id": "T18",
+      "priorite": "P0",
+      "exigences": "EX24",
+      "titre": "Relative poules",
+      "preconditions": "Mode relatif 7 jours civils ; occurrence ouverte.",
+      "action": "Valider le 25/10/2026 à 10:00 Paris.",
+      "resultat_attendu": "Une suivante due le 01/11 à 10:00, visible le 27/10 à 10:00 ; aucun dimanche imposé.",
+      "statut": "À exécuter",
+      "lot": "MVP"
+    },
+    {
+      "id": "T19",
+      "priorite": "P0",
+      "exigences": "EX24 EX25",
+      "titre": "Relative en grand retard",
+      "preconditions": "Occurrence poules ouverte depuis 21 jours.",
+      "action": "Exécuter le scheduler et relire.",
+      "resultat_attendu": "Une seule occurrence ouverte ; aucune copie périodique artificielle.",
+      "statut": "À exécuter",
+      "lot": "MVP"
+    },
+    {
+      "id": "T20",
+      "priorite": "P0",
+      "exigences": "EX26",
+      "titre": "Accumulation fixe",
+      "preconditions": "Routine quotidienne non faite pendant trois jours.",
+      "action": "Relancer deux fois la génération.",
+      "resultat_attendu": "Trois occurrences passées distinctes ; aucun doublon ; retards triés.",
+      "statut": "À exécuter",
+      "lot": "MVP"
+    },
+    {
+      "id": "T21",
+      "priorite": "P0",
+      "exigences": "EX27",
+      "titre": "Première échéance inconnue",
+      "preconditions": "Import avec done=true mais sans completed_at.",
+      "action": "Configurer une récurrence relative.",
+      "resultat_attendu": "Date initiale ou nouvelle validation demandée ; aucune date historique inventée.",
+      "statut": "À exécuter",
+      "lot": "MVP"
+    },
+    {
+      "id": "T22",
+      "priorite": "P0",
+      "exigences": "EX28",
+      "titre": "Double validation",
+      "preconditions": "Même occurrence et deux sessions.",
+      "action": "Envoyer deux commandes complete en parallèle.",
+      "resultat_attendu": "Une réalisation et une suivante relative ; seconde réponse déjà appliquée.",
+      "statut": "À exécuter",
+      "lot": "MVP"
+    },
+    {
+      "id": "T23",
+      "priorite": "P0",
+      "exigences": "EX29",
+      "titre": "Réponse perdue",
+      "preconditions": "Transaction committée mais réponse perdue.",
+      "action": "Réenvoyer le même request_id puis changer le corps.",
+      "resultat_attendu": "Même résultat pour le même corps ; REQUEST_REUSED sinon ; aucun doublon.",
+      "statut": "À exécuter",
+      "lot": "MVP"
+    },
+    {
+      "id": "T24",
+      "priorite": "P0",
+      "exigences": "EX29 EX30",
+      "titre": "Conflit réalisation/saut",
+      "preconditions": "Deux clients avec la même version.",
+      "action": "Envoyer simultanément réalisation et saut.",
+      "resultat_attendu": "Une issue terminale ; conflit expliqué au second ; aucun état double.",
+      "statut": "À exécuter",
+      "lot": "MVP"
+    },
+    {
+      "id": "T25",
+      "priorite": "P0",
+      "exigences": "EX30",
+      "titre": "Report traçable",
+      "preconditions": "Occurrence ouverte avec échéance initiale connue.",
+      "action": "Reporter deux fois puis réaliser après la borne initiale.",
+      "resultat_attendu": "Même identifiant ; deux événements ; une tâche reportée ; retard principal conservé.",
+      "statut": "À exécuter",
+      "lot": "MVP"
+    },
+    {
+      "id": "T26",
+      "priorite": "P0",
+      "exigences": "EX31",
+      "titre": "Saut fixe",
+      "preconditions": "Récurrence fixe quotidienne.",
+      "action": "Sauter l’occurrence du jour.",
+      "resultat_attendu": "SKIPPED sans completed_at ; prochaine date inchangée ; saut distinct de non fait et réalisé.",
+      "statut": "À exécuter",
+      "lot": "MVP"
+    },
+    {
+      "id": "T27",
+      "priorite": "P0",
+      "exigences": "EX31 EX24",
+      "titre": "Saut relatif",
+      "preconditions": "Occurrence relative ouverte.",
+      "action": "Sauter sans choix de suite puis avec une nouvelle échéance.",
+      "resultat_attendu": "Sans choix, refus ; après choix, prochaine échéance fixée ; dernière validation inchangée.",
+      "statut": "À exécuter",
+      "lot": "MVP"
+    },
+    {
+      "id": "T28",
+      "priorite": "P0",
+      "exigences": "EX32",
+      "titre": "Annulation et pause",
+      "preconditions": "Définition avec retard existant.",
+      "action": "Mettre en pause puis annuler l’occurrence avec motif.",
+      "resultat_attendu": "Pause sans clôture du retard ; annulation tracée ; rappels arrêtés ; annulation hors D.",
+      "statut": "À exécuter",
+      "lot": "MVP"
+    },
+    {
+      "id": "T29",
+      "priorite": "P0",
+      "exigences": "EX33",
+      "titre": "Correction de validation relative",
+      "preconditions": "Réalisation relative avec suivante vierge, puis suivante déjà traitée.",
+      "action": "Réouvrir la réalisation précédente dans les deux cas.",
+      "resultat_attendu": "Correction atomique si suivante vierge ; conflit à résoudre si déjà traitée.",
+      "statut": "À exécuter",
+      "lot": "MVP"
+    },
+    {
+      "id": "T30",
+      "priorite": "P0",
+      "exigences": "EX34",
+      "titre": "Son au premier plan",
+      "preconditions": "Tablette réelle, volume vérifié et geste d’activation effectué.",
+      "action": "Programmer un rappel proche.",
+      "resultat_attendu": "Un son dans les 5 s de la cible au premier plan ; refus audio signalé honnêtement.",
+      "statut": "À exécuter",
+      "lot": "MVP"
+    },
+    {
+      "id": "T31",
+      "priorite": "P0",
+      "exigences": "EX35",
+      "titre": "Déduplication sons",
+      "preconditions": "Notification Push et son au premier plan actifs.",
+      "action": "Déclencher deux fois le même job.",
+      "resultat_attendu": "Une seule alerte audible par étape et appareil.",
+      "statut": "À exécuter",
+      "lot": "MVP"
+    },
+    {
+      "id": "T32",
+      "priorite": "P0",
+      "exigences": "EX35",
+      "titre": "Arrêt des relances",
+      "preconditions": "Job en attente pour tâche ouverte.",
+      "action": "Valider avant la relance.",
+      "resultat_attendu": "Vérification finale de l’état ; aucun nouvel envoi ; limite des notifications déjà livrées documentée.",
+      "statut": "À exécuter",
+      "lot": "MVP"
+    },
+    {
+      "id": "T33",
+      "priorite": "P1",
+      "exigences": "EX36",
+      "titre": "Quiet hours et report son",
+      "preconditions": "Plage silencieuse 22–07 ; échéance à 23 h.",
+      "action": "Tester report du son et report de la tâche séparément.",
+      "resultat_attendu": "Libellés distincts ; report du son sans modifier l’échéance ; aucune rafale à 07 h.",
+      "statut": "À exécuter",
+      "lot": "MVP"
+    },
+    {
+      "id": "T34",
+      "priorite": "P0",
+      "exigences": "EX37",
+      "titre": "Rituel sans double comptage",
+      "preconditions": "Rituel du soir avec rappel, sans génération de tâches.",
+      "action": "Déclencher son horaire.",
+      "resultat_attendu": "Bandeau et rappel ; aucune occurrence individuelle ni statistique de réalisation implicite.",
+      "statut": "À exécuter",
+      "lot": "MVP"
+    },
+    {
+      "id": "T35",
+      "priorite": "P0",
+      "exigences": "EX38",
+      "titre": "Statistiques chiffrées",
+      "preconditions": "D=10, T=4, L=2, S=1, N=2, A=1 et deux annulations.",
+      "action": "Consulter les vues globale et individuelle.",
+      "resultat_attendu": "Réalisation 60 %, ponctualité 66,7 %, provisoire ; annulations exclues ; somme exacte.",
+      "statut": "À exécuter",
+      "lot": "MVP"
+    },
+    {
+      "id": "T36",
+      "priorite": "P0",
+      "exigences": "EX38",
+      "titre": "Zéro donnée",
+      "preconditions": "Personne sans occurrence prévue.",
+      "action": "Ouvrir le bilan.",
+      "resultat_attendu": "Mention aucune donnée ; aucune réussite à 100 % fabriquée.",
+      "statut": "À exécuter",
+      "lot": "MVP"
+    },
+    {
+      "id": "T37",
+      "priorite": "P0",
+      "exigences": "EX39",
+      "titre": "Responsable versus acteur",
+      "preconditions": "Papa responsable et Maman autorisée à cocher.",
+      "action": "Maman valide, puis la tablette valide une autre tâche.",
+      "resultat_attendu": "Crédit à Papa ; acteur Maman puis appareil ; aucune identité humaine inventée.",
+      "statut": "À exécuter",
+      "lot": "MVP"
+    },
+    {
+      "id": "T38",
+      "priorite": "P0",
+      "exigences": "EX40",
+      "titre": "Historique et bilan arrêté",
+      "preconditions": "Occurrence non faite à minuit puis réalisée le lendemain.",
+      "action": "Comparer cohorte actuelle et snapshot arrêté.",
+      "resultat_attendu": "Vue actuelle N devient L ; snapshot garde N ; événements intacts.",
+      "statut": "À exécuter",
+      "lot": "MVP"
+    },
+    {
+      "id": "T39",
+      "priorite": "P0",
+      "exigences": "EX41",
+      "titre": "Reset encouragement quotidien",
+      "preconditions": "Trois personnes, messages choisis et retard ancien.",
+      "action": "Passer minuit Paris et connecter un autre appareil.",
+      "resultat_attendu": "Nouveau bilan et nouveaux messages ; historique et retard préservés ; choix identiques entre appareils.",
+      "statut": "À exécuter",
+      "lot": "MVP"
+    },
+    {
+      "id": "T40",
+      "priorite": "P1",
+      "exigences": "EX41",
+      "titre": "Stabilité éditoriale",
+      "preconditions": "Catalogue avec plusieurs textes par niveau.",
+      "action": "Rafraîchir dix fois et franchir des niveaux.",
+      "resultat_attendu": "Choix stable par niveau/date ; répétitions récentes évitées ; ton discret respecté.",
+      "statut": "À exécuter",
+      "lot": "MVP"
+    },
+    {
+      "id": "T41",
+      "priorite": "P0",
+      "exigences": "EX42",
+      "titre": "Exclusion de Jonathan",
+      "preconditions": "Profil Jonathan utilisé uniquement pour un accès caméra.",
+      "action": "Ouvrir toutes les vues et exports statistiques.",
+      "resultat_attendu": "Seulement Annabelle, Papa, Maman ; aucune donnée caméra dans les statistiques.",
+      "statut": "À exécuter",
+      "lot": "MVP"
+    },
+    {
+      "id": "T42",
+      "priorite": "P0",
+      "exigences": "EX43",
+      "titre": "Association code",
+      "preconditions": "Identifiant et code valides ; droits read/check demandés.",
+      "action": "Associer un appareil puis tenter une autre liste.",
+      "resultat_attendu": "Une seule liste autorisée ; aucun droit admin ; code absent des URL, journaux et caches.",
+      "statut": "À exécuter",
+      "lot": "MVP"
+    },
+    {
+      "id": "T43",
+      "priorite": "P0",
+      "exigences": "EX43 EX44",
+      "titre": "Codes invalides",
+      "preconditions": "Mauvais code, code expiré et code déjà utilisé.",
+      "action": "Multiplier les tentatives.",
+      "resultat_attendu": "Accès refusé et limitation de débit ; aucune énumération ni blocage global du foyer.",
+      "statut": "À exécuter",
+      "lot": "MVP"
+    },
+    {
+      "id": "T44",
+      "priorite": "P0",
+      "exigences": "EX44",
+      "titre": "Révocation active",
+      "preconditions": "Session appareil active avec flux ouvert.",
+      "action": "Révoquer puis tenter lecture et écriture.",
+      "resultat_attendu": "Refus serveur immédiat ; purge en ligne et fermeture du flux ; ancienne session sans accès.",
+      "statut": "À exécuter",
+      "lot": "MVP"
+    },
+    {
+      "id": "T45",
+      "priorite": "P0",
+      "exigences": "EX44 EX45",
+      "titre": "Révocation horsligne",
+      "preconditions": "Cache présent puis perte Wi-Fi.",
+      "action": "Révoquer, attendre le TTL puis reconnecter.",
+      "resultat_attendu": "Pas d’écriture confirmée ; cache masqué au TTL ; relecture refusée ; limite hors ligne explicitée.",
+      "statut": "À exécuter",
+      "lot": "MVP"
+    },
+    {
+      "id": "T46",
+      "priorite": "P0",
+      "exigences": "EX46",
+      "titre": "Permissions négatives",
+      "preconditions": "Deux foyers et rôles lecteur, participant, gestionnaire.",
+      "action": "Tenter les lectures, mutations, exports et statistiques hors périmètre.",
+      "resultat_attendu": "Tous les accès interdits sont refusés au serveur, y compris appels directs.",
+      "statut": "À exécuter",
+      "lot": "MVP"
+    },
+    {
+      "id": "T47",
+      "priorite": "P0",
+      "exigences": "EX46",
+      "titre": "Changement de compte",
+      "preconditions": "Session parent avec cache et Push.",
+      "action": "Déconnecter puis ouvrir le compte enfant.",
+      "resultat_attendu": "Aucun contenu privé résiduel ; flux ancien fermé ; notification de l’ancien compte filtrée.",
+      "statut": "À exécuter",
+      "lot": "MVP"
+    },
+    {
+      "id": "T48",
+      "priorite": "P0",
+      "exigences": "EX47",
+      "titre": "Configuration concurrente",
+      "preconditions": "Deux administrateurs sur une même version.",
+      "action": "Enregistrer des réglages différents.",
+      "resultat_attendu": "Second enregistrement refusé ; brouillon conservé ; aucun écrasement silencieux.",
+      "statut": "À exécuter",
+      "lot": "MVP"
+    },
+    {
+      "id": "T49",
+      "priorite": "P1",
+      "exigences": "EX48",
+      "titre": "Texte dangereux et destinations",
+      "preconditions": "Titre contenant du HTML, URL javascript: et intent invalide.",
+      "action": "Enregistrer puis afficher.",
+      "resultat_attendu": "Texte inerte ; protocoles refusés ; aucun script ni proxy arbitraire exécuté.",
+      "statut": "À exécuter",
+      "lot": "MVP"
+    },
+    {
+      "id": "T50",
+      "priorite": "P0",
+      "exigences": "EX49",
+      "titre": "Migration à blanc",
+      "preconditions": "Exports synthétiques V8/V9/V10 privés et partagés.",
+      "action": "Convertir puis générer le rapport.",
+      "resultat_attendu": "Listes, droits et coches rapprochés ; champs inconnus conservés ; zéro mutation en production.",
+      "statut": "À exécuter",
+      "lot": "MVP"
+    },
+    {
+      "id": "T51",
+      "priorite": "P0",
+      "exigences": "EX50",
+      "titre": "Migration rejouée",
+      "preconditions": "Batch déjà importé ; identifiants locaux identiques entre profils.",
+      "action": "Réimporter puis ajouter un homonyme d’identifiant différent.",
+      "resultat_attendu": "Aucun doublon de batch ; homonyme préservé ; propriétaire présent dans le mapping.",
+      "statut": "À exécuter",
+      "lot": "MVP"
+    },
+    {
+      "id": "T52",
+      "priorite": "P0",
+      "exigences": "EX51",
+      "titre": "Bascule rappels",
+      "preconditions": "Ancien et nouveau schedulers disponibles.",
+      "action": "Basculer une liste.",
+      "resultat_attendu": "Un seul moteur de rappels actif ; ancien writer bloqué sur le périmètre migré.",
+      "statut": "À exécuter",
+      "lot": "MVP"
+    },
+    {
+      "id": "T53",
+      "priorite": "P0",
+      "exigences": "EX52",
+      "titre": "Restauration",
+      "preconditions": "Sauvegarde et événements postérieurs à la bascule.",
+      "action": "Restaurer en recette puis tester le retour arrière.",
+      "resultat_attendu": "Données et droits restaurés ; événements postérieurs réconciliés ; RPO/RTO mesurés.",
+      "statut": "À exécuter",
+      "lot": "MVP"
+    },
+    {
+      "id": "T54",
+      "priorite": "P0",
+      "exigences": "EX53",
+      "titre": "Historique ancien incomplet",
+      "preconditions": "Historique V10 sans heures et avec jours non observés.",
+      "action": "Consulter l’historique migré.",
+      "resultat_attendu": "Ancien historique isolé ; aucune ponctualité ni non-réalisation inventée.",
+      "statut": "À exécuter",
+      "lot": "MVP"
+    },
+    {
+      "id": "T55",
+      "priorite": "P0",
+      "exigences": "EX54",
+      "titre": "Changements d’heure",
+      "preconditions": "Dates 29/03/2026 et 25/10/2026 ; cible locale 02:30.",
+      "action": "Générer échéances et rappels.",
+      "resultat_attendu": "H06 appliquée ; un seul identifiant ; routine quotidienne inchangée ; aucun offset UTC fixe.",
+      "statut": "À exécuter",
+      "lot": "MVP"
+    },
+    {
+      "id": "T56",
+      "priorite": "P1",
+      "exigences": "EX54",
+      "titre": "Fuseau appareil divergent",
+      "preconditions": "Téléphone réglé en UTC et foyer en Europe/Paris.",
+      "action": "Consulter et cocher autour de minuit Paris.",
+      "resultat_attendu": "Même cohorte et même échéance que la tablette ; horloge serveur prépondérante.",
+      "statut": "À exécuter",
+      "lot": "MVP"
+    },
+    {
+      "id": "T57",
+      "priorite": "P0",
+      "exigences": "EX55",
+      "titre": "Panne du temps réel",
+      "preconditions": "Versions reçues dans le désordre et événement manquant.",
+      "action": "Recevoir v5 puis v3 et reprendre au curseur.",
+      "resultat_attendu": "v3 ignorée ; snapshot après trou ; aucune coche ressuscitée.",
+      "statut": "À exécuter",
+      "lot": "MVP"
+    },
+    {
+      "id": "T58",
+      "priorite": "P0",
+      "exigences": "EX55",
+      "titre": "Mode dégradé",
+      "preconditions": "Flux temps réel coupé mais HTTP disponible.",
+      "action": "Modifier depuis un autre appareil.",
+      "resultat_attendu": "Repli polling ≤10 s et état dégradé visible ; pas de fausse conformité temps réel.",
+      "statut": "À exécuter",
+      "lot": "MVP"
+    },
+    {
+      "id": "T59",
+      "priorite": "P0",
+      "exigences": "EX45",
+      "titre": "Coche horsligne",
+      "preconditions": "Cache présent et Wi-Fi coupé.",
+      "action": "Tenter une validation.",
+      "resultat_attendu": "Action désactivée ou refus expliqué ; aucun succès confirmé ; fraîcheur du cache visible.",
+      "statut": "À exécuter",
+      "lot": "MVP"
+    },
+    {
+      "id": "T60",
+      "priorite": "P1",
+      "exigences": "EX56",
+      "titre": "Performance et endurance",
+      "preconditions": "Six appareils et 100 définitions par liste.",
+      "action": "Mesurer 100 mutations puis 24 h et dix cycles de veille.",
+      "resultat_attendu": "Objectifs de latence atteints ; aucune perte ni duplication ; interface stable.",
+      "statut": "À exécuter",
+      "lot": "MVP"
+    },
+    {
+      "id": "T61",
+      "priorite": "P1",
+      "exigences": "EX57",
+      "titre": "Accessibilité",
+      "preconditions": "Zoom 200 %, clavier et lecteur d’écran.",
+      "action": "Parcourir listes, dialogues et commandes.",
+      "resultat_attendu": "Noms, focus, contraste et sorties utilisables ; aucun bouton masqué ; animation réduite respectée.",
+      "statut": "À exécuter",
+      "lot": "MVP"
+    },
+    {
+      "id": "T62",
+      "priorite": "P0",
+      "exigences": "EX58",
+      "titre": "Lancement Android et retour",
+      "preconditions": "Application Android compatible installée puis application absente.",
+      "action": "Lancer depuis une icône et attendre l’inactivité.",
+      "resultat_attendu": "Geste requis, repli si absente ; retour depuis l’app démontré avec le mécanisme Android retenu.",
+      "statut": "À exécuter",
+      "lot": "MVP"
+    },
+    {
+      "id": "T63",
+      "priorite": "P0",
+      "exigences": "EX59",
+      "titre": "Localisation consentie",
+      "preconditions": "Personne consentante puis retrait du consentement.",
+      "action": "Lire la position puis révoquer.",
+      "resultat_attendu": "Périmètre respecté ; arrêt des nouvelles lectures ; aucun historique de trajet par défaut.",
+      "statut": "À exécuter",
+      "lot": "E1"
+    },
+    {
+      "id": "T64",
+      "priorite": "P1",
+      "exigences": "EX60",
+      "titre": "Agenda privé",
+      "preconditions": "Calendrier privé et OAuth restreint.",
+      "action": "Connecter puis révoquer.",
+      "resultat_attendu": "Agenda jamais rendu public ; droits minimaux ; panne secondaire isolée ; repli URL utilisable.",
+      "statut": "À exécuter",
+      "lot": "E1"
+    },
+    {
+      "id": "T65",
+      "priorite": "P0",
+      "exigences": "EX61",
+      "titre": "Commande volet",
+      "preconditions": "Entité volet autorisée et réseau lent.",
+      "action": "Commander puis couper et reconnecter.",
+      "resultat_attendu": "Envoyé distinct de confirmé ; état inconnu si nécessaire ; aucun rejeu ; droits respectés.",
+      "statut": "À exécuter",
+      "lot": "E1"
+    },
+    {
+      "id": "T66",
+      "priorite": "P0",
+      "exigences": "EX62",
+      "titre": "Secrets et export",
+      "preconditions": "Build du front et export de support.",
+      "action": "Scanner les fichiers et journaux.",
+      "resultat_attendu": "Aucun code, jeton ou secret serveur/caméra/localisation ; données minimisées.",
+      "statut": "À exécuter",
+      "lot": "MVP"
+    },
+    {
+      "id": "T67",
+      "priorite": "P1",
+      "exigences": "EX63",
+      "titre": "Mise à jour PWA",
+      "preconditions": "Ancien Service Worker et mutation en cours.",
+      "action": "Installer puis activer une mise à jour.",
+      "resultat_attendu": "Pas de rechargement durant la mutation ; données préservées ; version et caches corrects.",
+      "statut": "À exécuter",
+      "lot": "MVP"
+    },
+    {
+      "id": "T68",
+      "priorite": "P0",
+      "exigences": "EX64",
+      "titre": "Règles etmaintenance",
+      "preconditions": "Règle longue et quinze règles ; saisie sur téléphone.",
+      "action": "Modifier, réordonner puis consulter la tablette.",
+      "resultat_attendu": "Rails fixes ; contenu accessible ; aucune tâche/statistique implicite ; conflit de version géré.",
+      "statut": "À exécuter",
+      "lot": "MVP"
+    },
+    {
+      "id": "T69",
+      "priorite": "P0",
+      "exigences": "EX65",
+      "titre": "Cloisonnement des systèmes mémoire",
+      "preconditions": "Tous les parcours MVP sont disponibles.",
+      "action": "Les exécuter avec journalisation des accès externes.",
+      "resultat_attendu": "Aucune écriture Nexus, Atlas, Harmonie ou Tempo et aucune autorisation transitive.",
+      "statut": "À exécuter",
+      "lot": "MVP"
+    },
+    {
+      "id": "T70",
+      "priorite": "P0",
+      "exigences": "EX66",
+      "titre": "Période traversant minuit et création tardive",
+      "preconditions": "Période 22–02 ; création à 23 h et date d’ancrage fixée.",
+      "action": "Valider à 01:59:59 puis à 02:00.",
+      "resultat_attendu": "Apparition au plus tôt à la création ; ancrage conservé ; première à temps puis retard.",
+      "statut": "À exécuter",
+      "lot": "MVP"
+    },
+    {
+      "id": "T71",
+      "priorite": "P0",
+      "exigences": "EX67",
+      "titre": "Choix, réinitialisation et synchronisation des avatars",
+      "preconditions": "Parent et deuxième appareil connectés.",
+      "action": "Changer chacun des trois portraits puis rétablir sa valeur par défaut.",
+      "resultat_attendu": "Le portrait change dans la liste, les onglets et les statistiques ; le deuxième appareil reçoit la révision. Aucun compteur ni historique de tâche ne change.",
+      "statut": "À exécuter",
+      "lot": "MVP"
+    },
+    {
+      "id": "T72",
+      "priorite": "P0",
+      "exigences": "EX67",
+      "titre": "Import photo sûr et droits",
+      "preconditions": "JPEG, PNG, WebP et fichiers invalides ; profils parent, enfant, appareil associé.",
+      "action": "Importer une photo puis tenter SVG, fichier >5 Mo et modification d’une autre personne depuis le profil enfant.",
+      "resultat_attendu": "Recadrage carré 512 px, réencodage sans métadonnées originales ; formats et tailles refusés ; droits contrôlés côté serveur ; l’enfant ne modifie que son propre avatar ; appareil associé ne modifie aucun avatar.",
+      "statut": "À exécuter",
+      "lot": "MVP"
+    },
+    {
+      "id": "T73",
+      "priorite": "P1",
+      "exigences": "EX67",
+      "titre": "Recette visuelle approuvée",
+      "preconditions": "Tablette Android 10 pouces paysage et téléphone.",
+      "action": "Afficher deux listes, faire défiler verticalement et horizontalement, ouvrir statistiques et avatars.",
+      "resultat_attendu": "Palette rose/bleu/sauge, avatars chaleureux et icônes lisibles ; retards en tête ; règles et accès fixes ; bandeau valorisant Annabelle/Papa/Maman ; aucun Jonathan dans les statistiques.",
+      "statut": "À exécuter sur matériel",
+      "lot": "MVP"
+    }
+  ],
+  "version": "1.1"
+}

@@ -1,0 +1,17 @@
+{
+  "version": "1.1",
+  "pdf_pages": 50,
+  "requirements": 67,
+  "target_test_cases": 73,
+  "target_test_status": "À exécuter ; voir état de recette de la réalisation",
+  "logical_entities": 26,
+  "screen_mockups": 5,
+  "avatar_gallery": 1,
+  "qa": {
+    "docx_rendered_to_pdf": true,
+    "all_pages_visual_overview_reviewed": true,
+    "overflow_text_bounds": false,
+    "traceability_references_valid": true
+  },
+  "memory_system_writes": false
+}

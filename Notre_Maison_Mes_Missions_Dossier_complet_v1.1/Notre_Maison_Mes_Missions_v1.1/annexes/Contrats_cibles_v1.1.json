@@ -1,0 +1,50 @@
+{
+  "version": "1.1",
+  "status": "À créer ; ne pas confondre avec RPC V10",
+  "operations": [
+    "pairList",
+    "readPortal",
+    "readOccurrences",
+    "completeOccurrence",
+    "rescheduleOccurrence",
+    "skipOccurrence",
+    "cancelOccurrence",
+    "correctOccurrence",
+    "editDefinition",
+    "readStats",
+    "subscribeRevisions",
+    "exportScope"
+  ],
+  "mutationEnvelope": {
+    "schema_version": 1,
+    "request_id": "UUID",
+    "occurrence_id": "UUID",
+    "expected_version": 3,
+    "action": "complete"
+  },
+  "response": {
+    "status": "completed",
+    "version": 4,
+    "completed_at": "ISO8601 UTC server",
+    "event_id": "UUID",
+    "already_applied": false
+  },
+  "errors": [
+    "AUTH_REQUIRED",
+    "ACCESS_REVOKED",
+    "SCOPE_DENIED",
+    "VERSION_CONFLICT",
+    "ALREADY_TERMINAL",
+    "INVALID_SCHEDULE",
+    "OCCURRENCE_NOT_VISIBLE",
+    "REQUEST_REUSED",
+    "RATE_LIMITED",
+    "SYNC_GAP"
+  ],
+  "security": {
+    "code_in_url": false,
+    "server_authorization_every_read_write": true,
+    "revision_stream_contains_private_content": false,
+    "scope": "list+permissions+device/session"
+  }
+}

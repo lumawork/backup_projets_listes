@@ -1,0 +1,246 @@
+{
+  "audit_date": "2026-10-25",
+  "repository": "https://github.com/lumawork/listes-nana",
+  "commit": "ac1beb58c59fae091906a3e4253afe0b84786520",
+  "published_url": "https://lumawork.github.io/listes-nana/",
+  "repo_comparison": [
+    {
+      "file": "themes.js",
+      "present": true,
+      "same": true,
+      "sha256_archive": "1a0193b0dffa701991b6b87b026ddda1305473ddddd116e761daed679f3ded0c",
+      "sha256_repo": "1a0193b0dffa701991b6b87b026ddda1305473ddddd116e761daed679f3ded0c"
+    },
+    {
+      "file": "themes.css",
+      "present": true,
+      "same": true,
+      "sha256_archive": "f2331da090485b95d530578d971ad8cd0778fd433c65efa65e1464f357d410ad",
+      "sha256_repo": "f2331da090485b95d530578d971ad8cd0778fd433c65efa65e1464f357d410ad"
+    },
+    {
+      "file": "core.js",
+      "present": true,
+      "same": true,
+      "sha256_archive": "d86a84b69d8c96e3243ff7fa0582bdc67200930d82af8f1d6b659f4df67226d1",
+      "sha256_repo": "d86a84b69d8c96e3243ff7fa0582bdc67200930d82af8f1d6b659f4df67226d1"
+    },
+    {
+      "file": "config.js",
+      "present": true,
+      "same": true,
+      "sha256_archive": "a5b51d9dbc1858891e0ce266a5f728f78fe07223e1f3b14feba49bfa185beb26",
+      "sha256_repo": "a5b51d9dbc1858891e0ce266a5f728f78fe07223e1f3b14feba49bfa185beb26"
+    },
+    {
+      "file": "app.js",
+      "present": true,
+      "same": true,
+      "sha256_archive": "4bca1addb8bd1f7f061593fd6791393e9859308a4e7804515e02413612a802f5",
+      "sha256_repo": "4bca1addb8bd1f7f061593fd6791393e9859308a4e7804515e02413612a802f5"
+    },
+    {
+      "file": "shared.js",
+      "present": true,
+      "same": true,
+      "sha256_archive": "a0211282e855f412c20be0d2aea0a20707bb8099c4fca40adbe7d29b918fdc2d",
+      "sha256_repo": "a0211282e855f412c20be0d2aea0a20707bb8099c4fca40adbe7d29b918fdc2d"
+    },
+    {
+      "file": "sw.js",
+      "present": true,
+      "same": true,
+      "sha256_archive": "aa69ac0ae7f2d96fcb30b6647f32e260d111d4d01b83d8b3639e2b0a64176979",
+      "sha256_repo": "aa69ac0ae7f2d96fcb30b6647f32e260d111d4d01b83d8b3639e2b0a64176979"
+    },
+    {
+      "file": "index.html",
+      "present": true,
+      "same": true,
+      "sha256_archive": "6ce763e2c6cac2ee3059e7f79e4386db9dbe2487e06c677a169f095917ca2669",
+      "sha256_repo": "6ce763e2c6cac2ee3059e7f79e4386db9dbe2487e06c677a169f095917ca2669"
+    },
+    {
+      "file": "history.js",
+      "present": true,
+      "same": true,
+      "sha256_archive": "a26c1d3653c6539d9f271271227d9fc57506651b1c0014af4ca2b0b72146c7c8",
+      "sha256_repo": "a26c1d3653c6539d9f271271227d9fc57506651b1c0014af4ca2b0b72146c7c8"
+    },
+    {
+      "file": "adult-messages.js",
+      "present": true,
+      "same": true,
+      "sha256_archive": "9607ceecb0e4bf983ff094f0d17236f7c32095f6be4921ebd03c5f4ae59d2f0f",
+      "sha256_repo": "9607ceecb0e4bf983ff094f0d17236f7c32095f6be4921ebd03c5f4ae59d2f0f"
+    },
+    {
+      "file": "style.css",
+      "present": true,
+      "same": true,
+      "sha256_archive": "af966a997b648eb24f9568739d1a82162d8528056683d1af3894eb0409eed646",
+      "sha256_repo": "af966a997b648eb24f9568739d1a82162d8528056683d1af3894eb0409eed646"
+    },
+    {
+      "file": "dashboard.js",
+      "present": true,
+      "same": true,
+      "sha256_archive": "f5b705df08c57ffbdb37ce8a126937854e5927f005fe490b01c098673c987a3f",
+      "sha256_repo": "f5b705df08c57ffbdb37ce8a126937854e5927f005fe490b01c098673c987a3f"
+    },
+    {
+      "file": "manifest.webmanifest",
+      "present": true,
+      "same": true,
+      "sha256_archive": "5b20deb9964206806d38a83085d61ba2639b91d515270e45d2bd48efc0f7e73d",
+      "sha256_repo": "5b20deb9964206806d38a83085d61ba2639b91d515270e45d2bd48efc0f7e73d"
+    },
+    {
+      "file": "icon.svg",
+      "present": true,
+      "same": true,
+      "sha256_archive": "01b0a56287682b39f9987fc35591fe84d60a00c4b681a80907f0881b918083f7",
+      "sha256_repo": "01b0a56287682b39f9987fc35591fe84d60a00c4b681a80907f0881b918083f7"
+    },
+    {
+      "file": "supabase.min.js",
+      "present": true,
+      "same": true,
+      "sha256_archive": "c45136a0ba5c7391646869a734db105ba607a9233fd6ec2e7e5bbab447bdc57a",
+      "sha256_repo": "c45136a0ba5c7391646869a734db105ba607a9233fd6ec2e7e5bbab447bdc57a"
+    },
+    {
+      "file": "family.js",
+      "present": true,
+      "same": true,
+      "sha256_archive": "4637ee62f6d7032e4c4c46eafce13ab13047a8a4d587efd17d7d16ac65eb0432",
+      "sha256_repo": "4637ee62f6d7032e4c4c46eafce13ab13047a8a4d587efd17d7d16ac65eb0432"
+    },
+    {
+      "file": "messages.js",
+      "present": true,
+      "same": true,
+      "sha256_archive": "78d9c37e7bbe190209cecb6ac688644a835a2cf402b4ce756ff430edaa8e6725",
+      "sha256_repo": "78d9c37e7bbe190209cecb6ac688644a835a2cf402b4ce756ff430edaa8e6725"
+    },
+    {
+      "file": "reminders.js",
+      "present": true,
+      "same": true,
+      "sha256_archive": "4621c724189f17b5bf424cf8cc9f2ff4dde231dec477650527efc27149147cb6",
+      "sha256_repo": "4621c724189f17b5bf424cf8cc9f2ff4dde231dec477650527efc27149147cb6"
+    },
+    {
+      "file": "supabase.LICENSE.txt",
+      "present": true,
+      "same": true,
+      "sha256_archive": "334dd6820e2eaeab2064e7c59001b810566728a28a41a7c1dbf69bbee17d0936",
+      "sha256_repo": "334dd6820e2eaeab2064e7c59001b810566728a28a41a7c1dbf69bbee17d0936"
+    }
+  ],
+  "published_comparison": [
+    {
+      "file": "index.html",
+      "http": 200,
+      "same": true,
+      "sha256": "6ce763e2c6cac2ee3059e7f79e4386db9dbe2487e06c677a169f095917ca2669"
+    },
+    {
+      "file": "app.js",
+      "http": 200,
+      "same": true,
+      "sha256": "4bca1addb8bd1f7f061593fd6791393e9859308a4e7804515e02413612a802f5"
+    },
+    {
+      "file": "core.js",
+      "http": 200,
+      "same": true,
+      "sha256": "d86a84b69d8c96e3243ff7fa0582bdc67200930d82af8f1d6b659f4df67226d1"
+    },
+    {
+      "file": "shared.js",
+      "http": 200,
+      "same": true,
+      "sha256": "a0211282e855f412c20be0d2aea0a20707bb8099c4fca40adbe7d29b918fdc2d"
+    },
+    {
+      "file": "family.js",
+      "http": 200,
+      "same": true,
+      "sha256": "4637ee62f6d7032e4c4c46eafce13ab13047a8a4d587efd17d7d16ac65eb0432"
+    },
+    {
+      "file": "history.js",
+      "http": 200,
+      "same": true,
+      "sha256": "a26c1d3653c6539d9f271271227d9fc57506651b1c0014af4ca2b0b72146c7c8"
+    },
+    {
+      "file": "sw.js",
+      "http": 200,
+      "same": true,
+      "sha256": "aa69ac0ae7f2d96fcb30b6647f32e260d111d4d01b83d8b3639e2b0a64176979"
+    },
+    {
+      "file": "config.js",
+      "http": 200,
+      "same": true,
+      "sha256": "a5b51d9dbc1858891e0ce266a5f728f78fe07223e1f3b14feba49bfa185beb26"
+    }
+  ],
+  "original_tests": [
+    {
+      "test": "shared-database",
+      "code": 1,
+      "output": "",
+      "error": "TypeError: Cannot read properties of undefined (reading 'kind')\n    at /workspace/scratch/2c9d88fc9d06/audit_work/Mes_missions_V10_Partage_et_nouveaux_themes/verification/shared-database.cjs:29:214\n"
+    },
+    {
+      "test": "shared-client",
+      "code": 0,
+      "output": "OK interface partage : création, propriétaire Guillaume/contribution Laurie, ajout confirmé une fois après réponse perdue, deux coches rapides conservées, brouillon protégé, conflit de réglages, transfert privé atomique et déconnexion sans données partagées résiduelles.\n",
+      "error": ""
+    },
+    {
+      "test": "private-client",
+      "code": 0,
+      "output": "OK client V9: reprise enfant, données adultes vierges, 18 thèmes, personnalités, suivi enfant, déconnexion sans fuite, changement de compte, cache par utilisateur, conflit sans écrasement.\n",
+      "error": ""
+    },
+    {
+      "test": "messages",
+      "code": 0,
+      "output": "OK 1200 messages adultes : volumes, unicité, 125 cycles × 3 tons × 2 profils, variantes récentes exclues, stabilité/reprise, enfant conservé, thèmes et sauvegardes compatibles.\n",
+      "error": ""
+    },
+    {
+      "test": "worker",
+      "code": 0,
+      "output": "OK worker : refus sans authentification, bibliothèques enfant/papa/maman, surnoms, ton discret, propriétaire et liste transmis, sauts de ligne, envoi simulé.\n",
+      "error": ""
+    },
+    {
+      "test": "sw",
+      "code": 0,
+      "output": "OK service worker : notifications refusées hors session ou autre profil, propriétaire exact, ouverture de la liste autorisée, déconnexion.\n",
+      "error": ""
+    }
+  ],
+  "winter_only_test_copy": "0\nOK partage SQL : droits, plusieurs propriétaires, contributeur sans rappel, ajout/coches atomiques, répétition réseau, conflits, contacts autorisés, dernier propriétaire, compte en attente, révocation, transfert privé, complétion commune et purge.\n",
+  "database_metadata": {
+    "project_name": "listesnana",
+    "region": "eu-west-1",
+    "postgres_major": 17,
+    "rls_tables_count": 18,
+    "profiles_count": 3,
+    "active_shared_lists_count": 0,
+    "application_tables_in_publications": 0,
+    "security_warning": "Leaked password protection disabled"
+  },
+  "limits": [
+    "No connected family UI session audited",
+    "Remote visual browser attempt timed out",
+    "No physical Android push/audio validation",
+    "No production mutation executed"
+  ]
+}
