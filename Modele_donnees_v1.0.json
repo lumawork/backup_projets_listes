@@ -1,0 +1,305 @@
+{
+  "version": "1.0",
+  "status": "Proposition logique, non déployée",
+  "timezone": "Europe/Paris",
+  "entities": {
+    "Household": {
+      "id": "uuid PK",
+      "name": "text",
+      "timezone": "IANA timezone",
+      "periods_config": "json periods",
+      "policy_version": "integer"
+    },
+    "Person": {
+      "id": "uuid PK",
+      "household_id": "uuid FK Household",
+      "auth_user_id": "uuid nullable FK Auth user",
+      "display_name": "text",
+      "kind": "adult|child",
+      "stats_enabled": "boolean"
+    },
+    "TaskList": {
+      "id": "uuid PK",
+      "household_id": "uuid FK Household",
+      "title": "text(100)",
+      "owner_person_id": "uuid FK Person",
+      "kind": "personal|shared",
+      "version": "bigint",
+      "archived_at": "timestamptz nullable"
+    },
+    "Membership": {
+      "list_id": "uuid FK TaskList",
+      "principal_type": "user|device",
+      "principal_id": "uuid",
+      "permissions": "read,check,add,manage,reschedule,skip,stats,export",
+      "revoked_at": "timestamptz nullable"
+    },
+    "TaskDefinition": {
+      "id": "uuid PK",
+      "list_id": "uuid FK TaskList",
+      "assignee_id": "uuid FK Person",
+      "title": "text(500)",
+      "description": "text(2000)",
+      "schedule_type": "FIXED_CALENDAR|AFTER_COMPLETION|ONE_OFF|MANUAL",
+      "due_type": "instant|period|day|none",
+      "recurrence_json": "interval/unit/time_basis/calendar/period_id",
+      "activation_date": "date",
+      "paused_until": "date nullable",
+      "revision": "bigint"
+    },
+    "Occurrence": {
+      "id": "uuid PK",
+      "definition_id": "uuid FK TaskDefinition",
+      "recurrence_key": "text stable",
+      "assignee_id": "uuid FK Person",
+      "original_due_at": "timestamptz nullable",
+      "effective_due_at": "timestamptz nullable",
+      "original_on_time_end": "timestamptz nullable",
+      "effective_on_time_end": "timestamptz nullable",
+      "visible_at": "timestamptz",
+      "status": "OPEN|COMPLETED|SKIPPED|CANCELLED",
+      "completed_at": "timestamptz nullable",
+      "completed_by": "uuid nullable",
+      "version": "bigint",
+      "policy_snapshot": "json immutable original rules/title/timezone",
+      "schedule_type": "captured enum; server-consistent with TaskDefinition"
+    },
+    "TaskEvent": {
+      "id": "uuid PK",
+      "occurrence_id": "uuid FK Occurrence",
+      "kind": "CREATE|COMPLETE|RESCHEDULE|SKIP|CANCEL|CORRECT|REOPEN|REASSIGN",
+      "actor_user_id": "uuid nullable",
+      "device_id": "uuid nullable",
+      "occurred_at": "timestamptz server",
+      "recorded_at": "timestamptz server",
+      "before_json": "json minimized",
+      "after_json": "json minimized",
+      "reason": "text nullable",
+      "request_id": "uuid"
+    },
+    "ReminderPolicy": {
+      "id": "uuid PK",
+      "target_type": "definition|list|ritual",
+      "target_id": "uuid",
+      "offsets_json": "json schedule",
+      "recipients": "json principals",
+      "sound": "asset reference",
+      "quiet_hours": "json local intervals",
+      "enabled": "boolean",
+      "revision": "bigint"
+    },
+    "ReminderJob": {
+      "id": "uuid PK",
+      "occurrence_id": "uuid nullable FK Occurrence",
+      "ritual_run_id": "uuid nullable FK RitualRun",
+      "policy_id": "uuid FK ReminderPolicy",
+      "step": "initial|followup1|followup2",
+      "channel": "foreground|push|native",
+      "device_id": "uuid",
+      "due_at": "timestamptz",
+      "expires_at": "timestamptz",
+      "state": "pending|leased|sent|ack|cancelled|failed|expired",
+      "attempts": "integer",
+      "lease_until": "timestamptz nullable"
+    },
+    "ShareGrant": {
+      "id": "uuid PK",
+      "list_id": "uuid FK TaskList",
+      "identifier_hash": "text",
+      "code_hash": "text salted/peppered",
+      "scopes": "json",
+      "expires_at": "timestamptz",
+      "epoch": "bigint",
+      "revoked_at": "timestamptz nullable",
+      "created_by": "uuid"
+    },
+    "DeviceSession": {
+      "id": "uuid PK",
+      "household_id": "uuid FK Household",
+      "device_label": "text",
+      "credential_hash": "text",
+      "expires_at": "timestamptz",
+      "revoked_at": "timestamptz nullable",
+      "auth_epoch": "bigint"
+    },
+    "DeviceListBinding": {
+      "device_session_id": "uuid FK DeviceSession",
+      "list_id": "uuid FK TaskList",
+      "grant_id": "uuid FK ShareGrant",
+      "scopes": "json",
+      "granted_epoch": "bigint"
+    },
+    "PortalConfig": {
+      "id": "uuid PK",
+      "household_id": "uuid FK Household",
+      "layout_json": "json",
+      "idle_seconds": "integer30..600",
+      "message_policy": "json",
+      "version": "bigint"
+    },
+    "PortalListBinding": {
+      "config_id": "uuid FK PortalConfig",
+      "person_id": "uuid FK Person",
+      "list_id": "uuid FK TaskList",
+      "order_index": "integer"
+    },
+    "HouseRule": {
+      "id": "uuid PK",
+      "household_id": "uuid FK Household",
+      "text": "text",
+      "order_index": "integer",
+      "enabled": "boolean",
+      "visibility": "json"
+    },
+    "Ritual": {
+      "id": "uuid PK",
+      "household_id": "uuid FK Household",
+      "content": "json title/description",
+      "schedule": "json",
+      "duration_minutes": "integer",
+      "generates_tasks": "boolean default false"
+    },
+    "RitualRun": {
+      "id": "uuid PK",
+      "ritual_id": "uuid FK Ritual",
+      "recurrence_key": "text",
+      "due_at": "timestamptz",
+      "status": "planned|acknowledged|cancelled"
+    },
+    "Shortcut": {
+      "id": "uuid PK",
+      "household_id": "uuid FK Household",
+      "icon": "safe asset id",
+      "label": "text",
+      "target_type": "url|android_intent|integration",
+      "target_ref": "text allowlisted",
+      "fallback_url": "https nullable",
+      "roles": "json",
+      "order_index": "integer"
+    },
+    "DailyFeedback": {
+      "person_id": "uuid FK Person",
+      "local_date": "date",
+      "level": "integer0..100",
+      "message_id": "text",
+      "library_version": "text",
+      "seed": "text"
+    },
+    "DailySnapshot": {
+      "household_id": "uuid FK Household",
+      "person_id": "uuid FK Person",
+      "local_date": "date",
+      "as_of": "timestamptz",
+      "counters": "json",
+      "calculation_version": "text"
+    },
+    "Outbox": {
+      "event_id": "uuid PK",
+      "topic": "text restricted",
+      "revision": "bigint",
+      "delivered_at": "timestamptz nullable"
+    },
+    "Idempotency": {
+      "actor": "uuid",
+      "request_id": "uuid",
+      "hash": "sha256",
+      "result": "json minimized",
+      "created_at": "timestamptz"
+    },
+    "MigrationMap": {
+      "source_system": "text",
+      "source_owner": "text",
+      "source_list_id": "text",
+      "source_task_id": "text",
+      "target_id": "uuid",
+      "batch_id": "uuid",
+      "source_hash": "sha256"
+    },
+    "LegacySnapshot": {
+      "id": "uuid PK",
+      "batch_id": "uuid",
+      "source_owner": "text",
+      "source_hash": "sha256",
+      "archive_json": "json original data encrypted at rest",
+      "exported_at": "timestamptz"
+    },
+    "IntegrationConnection": {
+      "id": "uuid PK",
+      "household_id": "uuid FK Household",
+      "provider": "text",
+      "principal": "uuid",
+      "scope": "json",
+      "secret_ref": "vault reference",
+      "state": "connected|revoked|error"
+    },
+    "Consent": {
+      "id": "uuid PK",
+      "subject": "uuid FK Person",
+      "purpose": "text",
+      "readers": "json principals",
+      "granted_at": "timestamptz",
+      "revoked_at": "timestamptz nullable",
+      "retention": "interval/policy"
+    }
+  },
+  "constraints": [
+    {
+      "entity": "Occurrence",
+      "unique": [
+        "definition_id",
+        "assignee_id",
+        "recurrence_key"
+      ]
+    },
+    {
+      "entity": "Occurrence",
+      "partial_unique": [
+        "definition_id",
+        "assignee_id"
+      ],
+      "where": "schedule_type = 'AFTER_COMPLETION' AND status = 'OPEN'"
+    },
+    {
+      "entity": "MigrationMap",
+      "unique": [
+        "source_system",
+        "source_owner",
+        "source_list_id",
+        "source_task_id"
+      ]
+    },
+    {
+      "entity": "DailyFeedback",
+      "unique": [
+        "person_id",
+        "local_date",
+        "level",
+        "library_version"
+      ]
+    },
+    {
+      "entity": "ReminderJob",
+      "unique": [
+        "target stable key",
+        "policy_id",
+        "step",
+        "channel",
+        "device_id"
+      ]
+    },
+    {
+      "entity": "PortalListBinding",
+      "unique": [
+        "config_id",
+        "person_id"
+      ]
+    },
+    {
+      "entity": "Idempotency",
+      "unique": [
+        "actor",
+        "request_id"
+      ]
+    }
+  ]
+}

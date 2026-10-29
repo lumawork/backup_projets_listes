@@ -1,0 +1,67 @@
+﻿id;exigence;source;priorite;specification;tests;statut
+EX01;Deux listes tablette visibles;S01 S02 S07;MVP;§5,6;T01;À réaliser
+EX02;Scroll vertical indépendant;S01 S02;MVP;§5;T02;À réaliser
+EX03;Troisième liste Maman et scroll horizontal;S01 S02;MVP;§5;T01;À réaliser
+EX04;Règles et raccourcis fixes;S01 S02 S03–S07;MVP;§5,11;T03;À réaliser
+EX05;Écran tâches permanent;S01 S02;MVP;§5,13;T04;À réaliser
+EX06;Icônes et aide de paramétrage;S01 S02;MVP;§5,12;T03;À réaliser
+EX07;Trois associations de listes configurables;S01 S02;MVP;§12,17;T42 T48;À réaliser
+EX08;Portail distinct et moteur partagé;S01 S02 S08;MVP;§3,14;T07 T55;À réaliser
+EX09;Retour après inactivité;S01 S02;MVP;§13;T04;À réaliser
+EX10;Maintien caméra verrouillable/déverrouillable;S01 S02;MVP;§13;T05 T06;À réaliser
+EX11;Caméra sans faux direct;Conception S12;MVP;§13;T06;À réaliser
+EX12;Accès téléphone responsive;S01 S02;MVP;§5;T07;À réaliser
+EX13;Validation multiappareils;S01 S02;MVP;§16;T07;À réaliser
+EX14;Retards en tête;S01 S02;MVP;§5,7;T08;À réaliser
+EX15;Non-cochées conservées;S01 S02;MVP;§8;T08;À réaliser
+EX16;Apparition J−5 pour >24h;S01 S02;MVP;§7;T09;À réaliser
+EX17;Apparition H−2 pour ≤24h;S01 S02;MVP;§7;T10;À réaliser
+EX18;Apparition période−4h;S01 S02;MVP;§7;T11;À réaliser
+EX19;Traitement explicite exactement 24 h;S01 H01;MVP;§7,23;T12;À réaliser
+EX20;Ponctualité <24h dans heure;S01 H03;MVP;§7;T13 T14;À réaliser
+EX21;Ponctualité dans période;S01 S02;MVP;§7;T15;À réaliser
+EX22;Ponctualité >24h dans journée;S01 S02;MVP;§7;T16;À réaliser
+EX23;Anticipation explicite;H03;MVP;§7,10;T17;À réaliser
+EX24;Récurrence après dernière validation/poules7j;S01 S02 H07;MVP;§8;T18 T19 T27;À réaliser
+EX25;Relative sans accumulation artificielle;S02 H07;MVP;§8;T19;À réaliser
+EX26;Fixes avec occurrences persistantes;S01 S02;MVP;§8;T20;À réaliser
+EX27;Échéance initiale fiable;S01 Conception;MVP;§8,20;T21;À réaliser
+EX28;Réalisation atomique;S01 S08;MVP;§16;T22;À réaliser
+EX29;Idempotence et absence de doublons;S01 S08;MVP;§16;T23 T24;À réaliser
+EX30;Reports tracés et baseline conservée;S01 H11;MVP;§8,10;T24 T25;À réaliser
+EX31;Saut distinct sans réalisation;S01 S02 H08;MVP;§8,10;T26 T27;À réaliser
+EX32;Pause/annulation explicites;S01 Conception;MVP;§8;T28;À réaliser
+EX33;Corrections sans effacement;S01 Conception;MVP;§8;T29;À réaliser
+EX34;Son/horaire paramétrables;S01 S02;MVP;§9;T30;À réaliser
+EX35;Rappels arrêtés et dédupliqués;S01 S08;MVP;§9;T31 T32;À réaliser
+EX36;Quiet hours et report du rappel séparé;S01 H10;MVP;§9;T33;À réaliser
+EX37;Rituels et rappels configurables;S01 S04;MVP;§9,12;T34;À réaliser
+EX38;Statistiques globales/personnelles/dénominateurs;S01 S02;MVP;§10;T35 T36;À réaliser
+EX39;Responsable distinct du validateur;Conception S01;MVP;§4,10;T37;À réaliser
+EX40;Conservation historique et snapshots;S01 H11;MVP;§10;T38;À réaliser
+EX41;Bandeau quotidien valorisant;S01 S02 S08;MVP;§10;T39 T40;À réaliser
+EX42;Stats Annabelle/Papa/Maman sans Jonathan;S01 S02;MVP;§10;T41;À réaliser
+EX43;Identifiant et code de liste sécurisé;S01 S02 H16;MVP;§17;T42 T43;À réaliser
+EX44;Révocation effective des accès;S01;MVP;§17;T43 T44 T45;À réaliser
+EX45;Horsligne lecture honnête;Conception ADR05;MVP;§16,17;T45 T59;À réaliser
+EX46;Droits et confidentialité par liste;S01 S08;MVP;§4,17;T46 T47;À réaliser
+EX47;Administration et conflits de configuration;S01 S02;MVP;§12;T48;À réaliser
+EX48;Texte/liens/intents validés;S01 S12;MVP;§17;T49;À réaliser
+EX49;Inventaire et migration à blanc;S01;MVP;§20;T50;À réaliser
+EX50;Migration déterministe anti-doublons;S01;MVP;§20;T51;À réaliser
+EX51;Bascule sans double rappel;S01 S08;MVP;§20;T52;À réaliser
+EX52;Sauvegarde et restauration vérifiables;S01;MVP;§19,20;T53;À réaliser
+EX53;Ne pas inventer ponctualité legacy;S08 S09 Conception;MVP;§1,20;T54;À réaliser
+EX54;Heure d’été/hiver et fuseaux;S11 H06;MVP;§7;T55 T56;À réaliser
+EX55;Temps réel sécurisé et resynchronisation;S01 S08 ADR03;MVP;§14,16;T57 T58;À réaliser
+EX56;Performance/endurance sur matériel;S01 Conception;MVP;§19;T60;À réaliser
+EX57;Accessibilité et lisibilité;S01 Conception;MVP;§5,19;T61;À réaliser
+EX58;Lancer URL/apps et retour fiable;S01 S02 S12;MVP;§13;T62;À réaliser
+EX59;Localisation avec consentement;S01;E1;§17,18;T63;À réaliser
+EX60;Agenda privé et courses secondaires;S01 S02;E1;§18;T64;À réaliser
+EX61;Volets/HA sans dépendance moteur;S01 S02;E1;§18;T65;À réaliser
+EX62;Protection des secrets et minimisation;S01 S08 S12;MVP;§17;T66;À réaliser
+EX63;Mise à jour PWA non destructive;S01 S08;MVP;§14,19;T67;À réaliser
+EX64;Maintenance simple règles/rituels/listes;S01 S02 S03;MVP;§11,12;T68;À réaliser
+EX65;Aucune écriture dans systèmes mémoire;S01;MVP;§2,3,17;T69;À réaliser
+EX66;Cas limites minuit et création tardive;S01 Conception;MVP;§7;T70;À réaliser
